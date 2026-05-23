@@ -1,0 +1,13 @@
+{
+  "name": "shop-coordinator-server",
+  "version": "2.0.0",
+  "description": "Mercari shop coordinator with dashboard and batch claim",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "11.10.0",
+    "express": "^4.21.0"
+  }
+}

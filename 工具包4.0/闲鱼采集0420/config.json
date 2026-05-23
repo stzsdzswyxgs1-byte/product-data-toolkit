@@ -1,0 +1,27 @@
+{
+  "mode": "detail",
+  "mode_texts": {
+    "store": "",
+    "search": "",
+    "detail": ""
+  },
+  "max_pages": "999",
+  "min_price": "",
+  "max_price": "",
+  "publish_days": "",
+  "workers": "6",
+  "img_workers": "32",
+  "export_dir": "",
+  "img_dir": "",
+  "geometry": "",
+  "cloud_sync": {
+    "enabled": false,
+    "nickname": "",
+    "password": ""
+  },
+  "export_mirror": {
+    "enabled": true,
+    "upload_url": "https://api.example.com/export_upload",
+    "token": "REDACTED_TOKEN"
+  }
+}

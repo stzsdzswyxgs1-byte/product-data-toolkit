@@ -1,0 +1,10 @@
+# 商品處理中樞 — Python 相依套件
+# torch / torchvision 不寫在這, 由 setup.bat 依 GPU/CPU 自動選版本
+pandas>=2.0
+openpyxl>=3.1
+Pillow>=10.0
+requests>=2.31
+opencv-python>=4.8
+simple-lama-inpainting>=0.1
+opencc-python-reimplemented
+lunardate

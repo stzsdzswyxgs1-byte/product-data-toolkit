@@ -1,0 +1,4 @@
+# admin 機器專屬, 絕不 commit
+update_admin_config.json
+_dryrun_*.zip
+__pycache__/

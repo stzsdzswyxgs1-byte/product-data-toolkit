@@ -1,0 +1,17 @@
+{
+  "name": "mercari-collector",
+  "version": "1.0.0",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "archiver": "^6.0.2",
+    "axios": "^1.7.7",
+    "better-sqlite3": "12.8.0",
+    "express": "^4.21.0",
+    "https-proxy-agent": "^7.0.6",
+    "xlsx": "^0.18.5"
+  }
+}

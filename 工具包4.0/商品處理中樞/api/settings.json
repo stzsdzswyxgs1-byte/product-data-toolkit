@@ -1,0 +1,6 @@
+{
+  "api_token": "REDACTED_API_TOKEN",
+  "api_port": 7778,
+  "api_compat_version": "1",
+  "api_server_enabled": false
+}

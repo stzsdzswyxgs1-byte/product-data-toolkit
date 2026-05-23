@@ -1,0 +1,79 @@
+# === Binaries / Installers (作品集不上傳，避免合規問題) ===
+*.apk
+*.ipa
+*.exe
+*.dll
+*.so
+*.dylib
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.deb
+*.rpm
+*.msi
+*.bin
+*.pt
+*.pth
+*.onnx
+*.bin.gz
+
+# === Logs / Runtime data ===
+*.log
+*.jsonl
+logs/
+api/logs/
+**/api/logs/
+*.db
+*.sqlite
+*.sqlite3
+
+# === Credentials / Secrets (本地配置不上傳) ===
+.env
+.env.*
+*.env
+accounts.json
+tg_tokens.json
+tg_relay_config.json
+cookies.json
+*.cookies
+*.key
+*.pem
+secrets.*
+credentials.*
+
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+.Python
+*.egg-info/
+dist/
+build/
+
+# === Node ===
+node_modules/
+package-lock.json
+yarn.lock
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Project specific ===
+profiles/
+.update_tmp/
+*.update_tmp
+big-lama.pt

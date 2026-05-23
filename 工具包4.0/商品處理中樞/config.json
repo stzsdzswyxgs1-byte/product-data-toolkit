@@ -1,0 +1,161 @@
+{
+  "source_type": "mercari",
+  "last_input_file": "",
+  "output_dir": "",
+  "output_name": "test",
+  "output_conflict": "rename",
+  "steps": {
+    "translate": {
+      "enabled": true,
+      "auto_for_mercari": true
+    },
+    "seo": {
+      "enabled": false
+    },
+    "category": {
+      "enabled": true
+    },
+    "replace": {
+      "enabled": true
+    },
+    "price_clean": {
+      "enabled": true
+    },
+    "keyword": {
+      "enabled": true
+    },
+    "price": {
+      "enabled": true
+    },
+    "defaults": {
+      "enabled": true
+    },
+    "dedup": {
+      "enabled": true
+    },
+    "desc_append": {
+      "enabled": false
+    },
+    "f2_subtitle_hashtag": {
+      "enabled": false,
+      "_comment": "舊 V53 F2, V65 已含, 預設關閉"
+    },
+    "seo_v64_image": {
+      "enabled": true,
+      "_comment": "★ V65 SEO Stage A-D (清洗+主副詞+標題+標籤)"
+    },
+    "v65_stage_e": {
+      "enabled": false,
+      "_comment": "★ V65 Stage E 全圖 reject 判定 (掃所有圖, 較慢, 可關)"
+    },
+    "image_dewatermark": {
+      "enabled": false,
+      "_comment": "★ 去水印救援 (AI 定位 + LaMa)"
+    },
+    "image_opt": {
+      "enabled": false,
+      "_comment": "★ 首圖 AI 優化 (GPT-image-2 w=64 + input 1024 壓縮)"
+    }
+  },
+  "paths": {
+    "mapping_xlsx": "煤爐映射奇摩分類.xlsx",
+    "goofish_mapping_xlsx": "闲鱼映射奇摩分類.xlsx",
+    "rules_xlsx": "",
+    "replace_xlsx": "替換詞.xlsx",
+    "number_removal_xlsx": "需要删除数字的内容（只刪數字）.xlsx",
+    "full_removal_xlsx": "需要完全删除的内容（全刪）.xlsx",
+    "keyword_xlsx": "關鍵詞.xlsx",
+    "full_mercari_xlsx": "",
+    "yahoo_cat_xlsx": "",
+    "seo_tool_dir": "../SEO翻譯工具6.0"
+  },
+  "price": {
+    "mercari_divisor": 20,
+    "min_price": 15.0,
+    "max_price": 80000.0,
+    "tiers": [
+      {
+        "min": 10000.0,
+        "max": 999999.0,
+        "multiplier": 8.0
+      },
+      {
+        "min": 5000.0,
+        "max": 9999.0,
+        "multiplier": 9.0
+      },
+      {
+        "min": 2000.0,
+        "max": 4999.0,
+        "multiplier": 9.5
+      },
+      {
+        "min": 500.0,
+        "max": 1999.0,
+        "multiplier": 10.0
+      },
+      {
+        "min": 100.0,
+        "max": 499.0,
+        "multiplier": 12.0
+      },
+      {
+        "min": 70.0,
+        "max": 99.0,
+        "multiplier": 13.0
+      },
+      {
+        "min": 50.0,
+        "max": 69.0,
+        "multiplier": 14.0
+      },
+      {
+        "min": 40.0,
+        "max": 49.0,
+        "multiplier": 17.0
+      }
+    ],
+    "floor_price": 700,
+    "curve_hold": 0.7
+  },
+  "defaults": {
+    "mercari": {
+      "location": "日本",
+      "condition": "mapping",
+      "product_type": "直購商品",
+      "shipping": "套用全店運費設定",
+      "payment": "ATM轉帳|Famiport|輕鬆付帳戶餘額|全家取貨付款|萊爾富取貨付款|7-ELEVEN取貨付款|信用卡一次付清|信用卡3期0利率|信用卡6期0利率",
+      "ship_date": "現貨商品",
+      "listing_type": "立即刊登",
+      "quantity": 1
+    },
+    "goofish": {
+      "location": "台北市",
+      "condition": "二手品",
+      "product_type": "直購商品",
+      "shipping": "套用全店運費設定",
+      "payment": "ATM轉帳|Famiport|輕鬆付帳戶餘額|全家取貨付款|萊爾富取貨付款|7-ELEVEN取貨付款|信用卡一次付清|信用卡3期0利率|信用卡6期0利率",
+      "ship_date": "現貨商品",
+      "listing_type": "立即刊登",
+      "quantity": 1
+    }
+  },
+  "api": {},
+  "process_mode": "raw",
+  "desc_templates": {
+    "selected": ""
+  },
+  "tg_id": "",
+  "lama": {
+    "device": "auto",
+    "pool_size": null,
+    "_comment": "去水印 LaMa 模型. device: auto/cuda/cpu. pool_size: null=自動 (24GB→28 / 16GB→20 / 12GB→16 / 8GB→10 / 6GB→6 / 4GB→3 / CPU→2). 4.0.59 升 pool 榨更多 VRAM, OOM 會自動降回安全值."
+  },
+  "quota": {
+    "mode": "middleware",
+    "endpoint": "https://api.example.com",
+    "client_secret": "REDACTED_CLIENT_SECRET",
+    "default_daily_limit": 0,
+    "_comment": "配額管理. tg_id 為空時鎖死貴功能. 預設額度 0 (鎖死), 必須 admin 透過 TG bot 給配額才能跑. 每日 10:00 (Asia/Taipei) 自動重置."
+  }
+}

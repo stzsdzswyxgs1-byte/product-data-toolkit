@@ -1,0 +1,16 @@
+{
+  "api_url": "https://api.example.com/v1",
+  "api_key": "REDACTED_API_KEY",
+  "model": "gpt-5.5",
+  "seo_model": "gpt-5.5",
+  "workers": 96,
+  "batch_size": 40,
+  "timeout": 90,
+  "kana_cleanup": true,
+  "seo": true,
+  "enable_translate": true,
+  "quality_filter": true,
+  "filter_words": "",
+  "last_input": "",
+  "last_output": ""
+}

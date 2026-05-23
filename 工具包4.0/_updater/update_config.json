@@ -1,0 +1,6 @@
+{
+  "_doc": "雲端更新設定 — 此檔會打進同事 zip; 只放 read_key 不放 admin_key",
+  "_doc_tg": "TG 通知 opt-in: 加 'tg_bot_token' 欄位才會推; 預設不推 (避免 bot token 流出)",
+  "worker_url": "https://api.example.com",
+  "read_key": "REDACTED_READ_KEY"
+}
